@@ -1,8 +1,8 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+/*
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +10,35 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+*/
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*
+
+JavaScript Nativo
+
+const rootEl = document.getElementById('root')
+const h1 = document.createElement('h1')
+const div = document.createElement('div')
+h1.textContent = 'Introdução ao React'
+h1.className = 'title'
+rootEl.appendChild(div)
+div.appendChild(h1)
+*/
+
+const rootEl = document.getElementById('root')
+/*
+
+React 
+
+const h1 = React.createElement('h1', {
+  children: 'Introdução ao React',
+  className: 'title'
+})
+*/
+
+/*
+JSX
+*/
+const h1 = <h1 className="title"><span>Introdução ao React</span></h1>
+
+ReactDOM.render(h1, rootEl)
